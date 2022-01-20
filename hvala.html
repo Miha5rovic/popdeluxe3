@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pop Deluxe</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="csshtml/moj.css">
+	<link rel="stylesheet" href="csshtml/ninja-slider.css">
+	<link rel="stylesheet" href="csshtml/glavascroll.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/ninja-slider.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/naslovnica3.png">
+</head>
+
+	<body>		
+     
+		<div class="row">
+			<div class="col-12 text-center">
+<h1>HVALA!</h1>
+<h4>Odgovorimo vam v najkrajšem možnem času. </h4>
+<br>
+<h5>Vaš</h5>
+<img class="" width="140" height="130" src="img/naslovnica3.svg"/>
+<br>
+<br>
+<h6>Preusmerjanje na domačo stran čez: <span id="counter">4</span> sekunde.</h6>
+
+</div>
+</div>
+			
+	</body>
+
+	<script type="text/javascript">
+	function countdown() {
+		var i = document.getElementById('counter');
+		if (parseInt(i.innerHTML)<=0) {
+			location.href = 'index.html';
+		}
+	if (parseInt(i.innerHTML)!=0) {
+		i.innerHTML = parseInt(i.innerHTML)-1;
+	}
+	}
+	setInterval(function(){ countdown(); },1000);
+	</script>
+
+
+
+
+
+
+
+	
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="jsb/bootstrap.js"></script>
+
+
+	
+</html>
